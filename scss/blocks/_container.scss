@@ -1,0 +1,12 @@
+.container {
+    width: 1260px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    @include tablet {
+        width: 768px;
+    }
+    @include mobile {
+        width: 330px;
+    }
+}
