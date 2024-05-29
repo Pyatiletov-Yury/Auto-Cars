@@ -1,0 +1,66 @@
+.about {
+    margin-bottom: 100px;
+    @include mobile {
+        margin-bottom: 60px;
+    }
+    // .about__content
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+        width: 560px;
+        margin: 0 auto;
+
+
+        @include mobile {
+            width: 300px;
+        }
+    }
+
+    &__content--about {
+        row-gap: 80px;
+        width: 720px;
+
+        @include mobile {
+            width: 300px;
+            row-gap: 60px;
+        }
+    }
+
+    // .about__me
+
+    &__me, &__skills {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    // .about__tags
+
+    &__tags {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        @include mobile {
+            flex-direction: row;
+            column-gap: 50px;
+        }
+    }
+}
+
+.tags {
+    display: flex;
+    justify-content: space-between;
+    @include mobile {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    li {
+        width: 98px;
+        img {
+            vertical-align: middle;
+            padding-right: 5px;
+        }
+    }
+}

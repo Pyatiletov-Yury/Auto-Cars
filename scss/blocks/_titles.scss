@@ -1,0 +1,53 @@
+.header {
+
+    &__title {
+        margin-bottom: 4px;
+        font-family: 'League Gothic';
+        font-weight: 400;
+        font-size: 96px;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+
+        @include mobile {
+            width: 268px;
+            margin: 0 auto;
+            margin-bottom: 5px;
+            line-height: 0.8;
+        }
+    }
+
+    // .header__subtitle
+
+    &__subtitle {
+        font-family: 'League Spartan';
+        font-weight: 400;
+        font-size: 32px;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 0.36em;
+    }
+}
+
+.about {
+
+    // .about__subtitle
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        color: #000;
+    }
+}
+
+.about__title, .contact__title {
+    font-family: 'League Spartan';
+    font-weight: 700;
+    font-size: 32px;
+    color: #000;
+    
+    @include mobile {
+        font-size: 24px;
+    }
+}

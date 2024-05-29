@@ -1,0 +1,48 @@
+.header {
+    margin-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 334px;
+    background-color: #000;
+
+    @include mobile {
+        padding-top: 20px;
+    }
+
+    // .header__nav
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    //.header__logo
+    &__logo {
+        transition: all 0.3s ease-in;
+        &:hover {
+            filter: drop-shadow(10px -10px 3px rgba(255, 50, 0, 0.6));
+        }
+    }
+
+    // .header__next
+
+    &__content {
+
+        text-align: center;
+        margin-top: 194px;
+    }
+}
+.header--contact {
+    margin-bottom: 80px;
+
+    @include mobile {
+        margin-bottom: 60px;
+    }
+}
+
+#openMobileNav {
+    transition: all 0.3s ease-in;
+    &:hover {
+        filter: drop-shadow(10px -10px 3px rgba(255, 50, 0, 1));
+    }
+}
